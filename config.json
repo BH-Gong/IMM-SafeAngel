@@ -1,0 +1,20 @@
+ {
+    "mode": "train",
+    "model_type": "BEATs",
+
+    "model_pt_path": "./pt/BEATs_iter3_plus_AS2M.pt",
+    "classifier_pt_path":"./result/best.pt",
+
+    "train_file_list": "./data/flist/train",
+    "valid_file_list": "./data/flist/valid",
+    "test_file_list": "./data/flist/test",
+
+    "epochs": 300,
+    "save_term": 10,
+    "lr": 5e-6,
+    "min_lr": 1e-10,
+    "optimizer": "AdamW",
+    "criterion": "CrossEntropyLoss",
+    "scheduler": "CosineAnnealingLR",
+    "T_max": 300
+}
